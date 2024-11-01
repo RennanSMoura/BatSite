@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Wet+Paint&family=Russo+One&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -33,11 +34,11 @@ nav {
         font-size: 1.3rem;
     }
 
-    & img{
+    & img {
         width: 100px;
     }
 
-    & .btn-amarelo{
+    & .btn-amarelo {
         display: flex;
         justify-content: center;
         background-color: #FFCC00;
@@ -50,20 +51,21 @@ nav {
     }
 }
 
-.home{
+.home {
     display: flex;
     width: 100%;
+    margin-bottom: 90px;
 
-    & .txthome{
+    & .txthome {
         width: 50%;
     }
-    & img{
+
+    & img {
         width: 50%;
-        height: 800px;
+        height: 585px;
     }
 
-    &
-    .txthome{
+    & .txthome {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -74,41 +76,38 @@ nav {
         padding-left: 5%;
         font-size: 25px;
 
-     & h1{
-        font-family: "Rubik Wet Paint", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: #ffffff;
-        font-size: 80px;
-        display: flex;
-        margin-top: 30px;
-        margin-bottom: 60px;
+        & h1 {
+            font-family: "Rubik Wet Paint", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: #ffffff;
+            font-size: 80px;
+            display: flex;
+        }
     }
 }
-}
 
-.textoPrincipal{
+.textoPrincipal {
     width: 77%;
 }
 
-.yellowWord{
+.yellowWord {
     color: #FFCC00;
 }
 
-.frasesImpactantes{
-    margin-top: 30px;
+.frasesImpactantes {
     font-size: 35px;
-    
+
 }
 
-.trilogia{
+.trilogia {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 
 
-    & h1{
+    & h1 {
         font-family: "Rubik Wet Paint", system-ui;
         font-weight: 400;
         font-style: normal;
@@ -116,64 +115,64 @@ nav {
         font-size: 60px;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;    
+        margin-bottom: 20px;
     }
 
-    & .imgCard{
+    & .imgCard {
         display: flex;
         justify-content: center;
         position: relative;
 
-    & span{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        color: white;
-        font-size: 40px;
-        font-family: "Russo One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        & span {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        & .btn-amarelo {
+            position: absolute;
+            bottom: 3%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 25px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            background-color: #FFCC00;
+            color: #000000;
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     }
 
-    & .btn-amarelo{
-        position: absolute;
-        bottom: 3%;
-        left: 80%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        color: white;
-        font-size: 25px;
-        font-family: "Russo One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        display: flex;
-        justify-content: center;
-        background-color: #FFCC00;
-        color: #000000;
-        width: 180px;
-        height: 60px;
-        text-align: center;
-        align-items: center;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    }
-
-    & .imgCard img{
+    & .imgCard img {
         width: 80%;
     }
 }
 
 
-.coringa{
+.coringa {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 
-    & h1{
+    & h1 {
         font-family: "Rubik Wet Paint", system-ui;
         font-weight: 400;
         font-style: normal;
@@ -181,97 +180,113 @@ nav {
         font-size: 60px;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;    
+        margin-bottom: 20px;
     }
 
-    & .imgCard{
+    & .imgCard {
         display: flex;
         justify-content: center;
         position: relative;
 
-    & span{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        color: white;
-        font-size: 40px;
-        font-family: "Russo One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        & span {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        & .btn-amarelo {
+            position: absolute;
+            bottom: 3%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-size: 25px;
+            font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            background-color: #FFCC00;
+            color: #000000;
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     }
 
-    & .btn-amarelo{
-        position: absolute;
-        bottom: 3%;
-        left: 80%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        font-size: 25px;
-        font-family: "Russo One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        display: flex;
-        justify-content: center;
-        background-color: #FFCC00;
-        color: #000000;
-        width: 180px;
-        height: 60px;
-        text-align: center;
-        align-items: center;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    }
-
-    & .imgCard img{
+    & .imgCard img {
         width: 80%;
     }
 }
 
 
-.edutainment h1{
+.edutainment h1 {
     color: #ffffff;
     font-family: "Rubik Wet Paint", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 60px;
-        text-align: center;
-        margin-bottom: 40px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.edutainment .conteudo{
+.edutainment .conteudo {
     display: flex;
-    justify-content: space-between;
 }
 
 
-.edutainment .conteudo .textosedutainment{
-    width: 50%;
+.edutainment .conteudo .textosedutainment {
+    width: 70%;
     display: flex;
     justify-content: center;
-    
-    & ul{
+
+    & ul {
         color: #ffffff;
-        font-size: 35px;
+        font-size: 30px;
         font-family: "Russo One", sans-serif;
         font-weight: 400;
         font-style: normal;
-        width: 60%;    
+        width: 60%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        & .bloco1 {
+            margin-bottom: 30px;
+        }
+
+        & .bloco1,
+        .bloco2 {
+            display: flex;
+
+            & img {
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }
+        }
     }
 }
 
 .edutainment .conteudo .imgCard2 {
-    position: relative; 
+    position: relative;
+    max-width: 80%;
+    padding-right: 60px;
 }
 
 .edutainment .conteudo .imgCard2 img {
-    width: 70%;
-    padding-right: 60px;
+    width: 80%;
+    height: 80%;
 }
 
 .edutainment .conteudo .imgCard2 .btn-amarelo {
@@ -280,7 +295,7 @@ nav {
     background-color: #FFCC00;
     color: #000000;
     width: 180px;
-    height: 60px;
+    height: 50px;
     text-align: center;
     align-items: center;
     border-radius: 10px;
@@ -291,22 +306,67 @@ nav {
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    top: 85%; /* Ajusta a distância do botão em relação ao topo da imagem */
-    right: 35%; /* Ajusta a distância do botão em relação à borda direita da imagem */
+    top: 65%;
+    right: 30%;
 }
 
 .edutainment .conteudo .textosedutainment ul {
-    list-style-type: none; /* Remove o estilo de lista padrão */
-    padding-left: 0; /* Ajuste para alinhar a lista se necessário */
+    display: flex;
 }
 
-.edutainment .conteudo .textosedutainment ul li::before {
-    content: "\f02d"; /* Unicode do ícone que deseja usar */
-    font-family: 'Font Awesome 5 Free'; /* Certifique-se de que o Font Awesome está carregado */
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 10px;
-    color: #FFFFFF; /* Cor do ícone */
+.edutainment .conteudo .textosedutainment ul li {
+    list-style-type: none;
+}
+
+.conteudo1 {
+    display: flex;
+    width: 100%;
+
+    & span{
+        margin-bottom: 30px;
+    }
+}
+
+.conteudo1 .imgCard {
+    width: 50%;
+    padding-left: 5%;
+
+
+    & img {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+.conteudo1 .textos {
+    width: 50%;
+    color: #ffffff;
     font-size: 30px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 40%;
+
+}
+
+.edutainment .conteudo1 .textos  {
+    display: flex;
+    flex-direction: column;
+
+    & .bloco1,
+    .bloco2 {
+        display: flex;
+        margin-bottom: 30px;
+
+        & img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.edutainment .conteudo1 .textos {
+    list-style-type: none;
 }
 
