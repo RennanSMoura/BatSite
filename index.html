@@ -13,11 +13,11 @@
     <section class="container">
         <nav>
             <img src="assets/logo.png" alt="logo-batman">
-            <a>HOME</a>
-            <a>TRILOGIA</a>
-            <a>CORINGA</a>
-            <a>EDUTAINMENT</a>
-            <a>SOBRE MIM</a>
+            <a href="#">HOME</a>
+            <a href="#trilogia">TRILOGIA</a>
+            <a href="#coringa">CORINGA</a>
+            <a href="#edutainment">EDUTAINMENT</a>
+            <a href="#sobremim">SOBRE MIM</a>
             <a class="btn-amarelo">ENTRAR</a>
         </nav>
 
@@ -38,16 +38,20 @@
             <img src="assets/batman 1.png">
         </div>
 
-        <div class="trilogia">
+        <div id="trilogia" class="trilogia">
             <h1>TRILOGIA</h1>
             <div class="imgCard">
-                <span>BATMAN BEGINS</span>
-                <img src="assets/begins.png" alt="card-begins">
-                <a class="btn-amarelo">LER MAIS</a>
+                <div class="flip-card-front">
+                    <span id="card-title">BATMAN BEGINS</span>
+                    <img id="card-image" src="assets/begins.png" alt="card-begins">
+                    <a class="btn-amarelo" onclick="flipCard()">LER MAIS</a>
+                </div>
             </div>
+            <button class="btn-prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="btn-next" onclick="changeImage(1)">&#10095;</button>
         </div>
 
-        <div class="coringa">
+        <div id="coringa" class="coringa">
             <h1>CORINGA</h1>
             <div class="imgCard">
                 <img src="assets/coringa.png" alt="card-begins">
@@ -55,7 +59,7 @@
             </div>
         </div>
 
-        <div class="edutainment">
+        <div id="edutainment" class="edutainment">
             <h1>EDUTAINMENT</h1>
             <div class="conteudo">
                 <div class="textosedutainment">
@@ -119,7 +123,7 @@
             </div>
         </div>
 
-        <div class="sobremim">
+        <div id="sobremim" class="sobremim">
             <h1>SOBRE MIM</h1>
             <div class="sobremimconteudo">
                 <div class="imgsobremim">
@@ -186,5 +190,5 @@
 
     </section>
 </body>
-
+<script src="js/main.js"></script>
 </html>
