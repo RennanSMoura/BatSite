@@ -23,6 +23,23 @@ html{
     height: 100%;
 }
 
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaçamento uniforme */
+    gap: 100px; /* Espaçamento entre as divs */
+    align-items: center;
+}
+
+.container2 > div {
+    flex: 1 1 30%; /* Flexível, com base de 30% para uniformidade */
+    min-width: 250px; /* Tamanho mínimo para garantir que as divs não fiquem muito pequenas */
+    padding: 15px; /* Espaçamento interno */
+    box-sizing: border-box; /* Para que padding não afete o tamanho total */
+    /* border: 1px solid #ccc; Opcional: borda para visualização */
+}
+
+
 nav {
     font-family: "Russo One", sans-serif;
     font-weight: 400;
@@ -32,6 +49,10 @@ nav {
     align-items: center;
     padding: 20px;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #000000;
     
     & a {
         text-decoration: none;
@@ -59,7 +80,7 @@ nav {
 .home {
     display: flex;
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 
     & .txthome {
         width: 50%;
@@ -109,8 +130,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
-    position: relative; /* Necessário para os botões de navegação */
+    /* margin-bottom: 100px; */
+    position: relative; 
+    width: 85%;
 }
 
 .trilogia h1 {
@@ -144,7 +166,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
   }
 
@@ -188,11 +210,11 @@ nav {
     width: 80%;
     border-radius: 10px;
     border: #FFCC00 solid 1px;
-    transition: opacity 0.5s ease-in-out; /* Adiciona a transição */
+    transition: opacity 0.5s ease-in-out;
 }
 
 .imgCard img.fade-out {
-    opacity: 0; /* Define a opacidade para 0 para a animação de fade-out */
+    opacity: 0; 
 }
 
 
@@ -206,15 +228,15 @@ nav {
     font-size: 30px;
     color: #ffffff;
     z-index: 1;
-    padding: 10px; /* Adiciona um pouco de espaço ao redor do texto do botão */
+    padding: 10px;
 }
 
 .btn-prev {
-    left: 10px; /* Distância do botão à esquerda */
+    left: 10px; 
 }
 
 .btn-next {
-    right: 10px; /* Distância do botão à direita */
+    right: 10px;
 }
 
 
@@ -224,8 +246,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
-
+    /* margin-bottom: 100px; */
+    width: 85%;
     & h1 {
         font-family: "Rubik Wet Paint", system-ui;
         font-weight: 400;
@@ -284,7 +306,8 @@ nav {
 }
 
 .edutainment {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+
 }
 
 .edutainment h1 {
@@ -431,7 +454,8 @@ nav {
 
 .sobremim {
 
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    /* width: 85%; */
 
     & h1 {
         color: #ffffff;
@@ -483,8 +507,9 @@ nav {
 }
 
 .sobreprojeto {
-margin-bottom: 100px;
+/* margin-bottom: 100px; */
 
+/* width: 85%; */
     & .conteudosobreprojeto {
         display: flex;
         justify-content: center;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Wet+Paint&family=Russo+One&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +14,14 @@
     width: 100%;
 }
 
+.container .mensagem{
+    background-color: #FFCC00;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .container .formulario{
     width: 60%;
     display: flex;
@@ -106,92 +115,34 @@
     margin-top: 20px;
 }
 
-
-.container .mensagem{
-    background-color: #FFCC00;
-    width: 40%;
-}
-
-.container .mensagem .morcegos img{
-position: absolute;
-}
-
-.container .mensagem span{
-    font-size: 43px;
+.mensagem span{
+    color: #000000;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 80%;
+    font-size: 50px;
+    text-align: center;
 }
 
-.bat1{
-    bottom: 0;
-    right: 0;
-    width: 55px;
-}
-
-.bat2{
-    width: 55px;
-    top: 0;
-    right: 36%;
-}
-.bat3{
-    width: 55px;
-    top: 42px;
-    right: 29%;
-}
-.bat4{
-    width: 55px;
-    top: 18px;
-    right: 19%;
-}
-
-.bat5{
-    width: 55px;
-    top: 100px;
-    right: 9%;
-}
-
-.bat6{
-    width: 55px;
-    bottom: 28px;
-    right: 32%;
-}
-.bat7{
-    width: 55px;
-    bottom: 91px;
-    right: 35%;
+.mensagem button{
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    background-color: #FFCC00;
+    color: #000000;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); 
+    margin: 10px;
+    border: 0;
+    margin: 40px;
 }
 
 
-.bat8{
-    width: 55px;
-    bottom: 28px;
-    right: 32%;
-}
-
-.bat9{
-    width: 55px;
-    top: 0;
-    right: 0%;
-}
-.bat10{
-    width: 55px;
-    bottom: 0px;
-    right: 22%;
-}
-
-.bat11{
-    width: 55px;
-    bottom: 35px;
-    right: 15%;
-}
-
-.bat12{
-    width: 55px;
-    bottom: 49px;
-    right: 7%;
-}
 
 .batbranco1{
     position: absolute;
@@ -224,21 +175,21 @@ position: absolute;
 .batbranco5{
     position: absolute;
     width: 55px;
-    left: 56%;
+    left: 34%;
     top: 6%;
     opacity: 0.5;
 }
 .batbranco6{
     position: absolute;
     width: 55px;
-    left: 44%;
-    top: 0%;
+    left: 24%;
+    top: 6%;
     opacity: 0.5;
 }
 .batbranco7{
     position: absolute;
     width: 55px;
-    left: 54%;
+    left: 34%;
     top: 17%;
     opacity: 0.5;
 }
@@ -253,13 +204,13 @@ position: absolute;
     position: absolute;
     width: 55px;
     left: 3%;
-    bottom: 71%;
-    opacity: 0.5
+    bottom: 64%;
+    opacity: 0.5;
 }
 .batbranco10{
     position: absolute;
     width: 55px;
-    left: 0%;
+    left: 5%;
     bottom: 24%;
     opacity: 0.5;
 }
@@ -280,7 +231,7 @@ position: absolute;
 .batbranco13{
     position: absolute;
     width: 55px;
-    left: 38%;
+    left: 34%;
     bottom: 3%;
     opacity: 0.5;
 }
@@ -294,17 +245,16 @@ position: absolute;
 .batbranco15{
     position: absolute;
     width: 55px;
-    left: 53%;
+    left: 28%;
     bottom: 35%;
     opacity: 0.5;
 }
 .batbranco16{
     position: absolute;
     width: 55px;
-    left: 55%;
-    bottom: 0;
-    opacity: 0.5;
-}
+    left: 32%;
+    bottom: 60%;
+    opacity: 0.5;}
 .batbranco17{
     position: absolute;
     width: 55px;
@@ -322,50 +272,7 @@ position: absolute;
 .batbranco19{
     position: absolute;
     width: 55px;
-    left: 55%;
-    bottom: 14%;
+    left: 32%;
+    bottom: 20%;
     opacity: 0.5;
 }
-
-
-.container .mensagem{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .mensagem .texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-
-
-    & button{
-        font-size: 20px;
-        font-family: "Russo One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        justify-content: center;
-        background-color: #FFCC00;
-        color: #000000;
-        width: 180px;
-        height: 60px;
-        text-align: center;
-        border-radius: 5px;
-        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); 
-        margin: 10px;
-        border: 0;
-        margin: 40px;
-    }
-
-    & button:hover{
-        background-color: #000000;
-        color: #FFCC00;
-        transition: 2s;
-        cursor: pointer;
-    }
-}
-
