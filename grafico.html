@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desempenho nas Últimas 10 Partidas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #FFD700; /* Amarelo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+       
+        }
+
+    </style>
+</head>
+<body>
+    <h1>DESEMPENHO NA SUAS ÚLTIMAS 10 PARTIDAS</h1>
+    <canvas id="grafico" width="800" height="400"></canvas>
+
+    <script>
+        const ctx = document.getElementById('grafico').getContext('2d');
+
+        const dados = {
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], // Números das partidas
+            datasets: [{
+                label: 'Pontuação',
+                data: [1500, 3000, 2500, 4000, 5000, 2000, 4500, 6000, 3500, 7000], // Exemplo de dados
+                borderColor: 'black',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                borderWidth: 2
+            }]
+        };
+
+        const config = {
+            type: 'line', // Tipo de gráfico
+            data: dados,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'black',
+                            stepSize: 1000
+                        },
+                        title: {
+                            display: true,
+                            text: 'PONTUAÇÃO',
+                            color: 'black',
+                            font: {
+                                size: 16
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'black'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Nº PARTIDA',
+                            color: 'black',
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        new Chart(ctx, config);
+    </script>
+</body>
+</html>

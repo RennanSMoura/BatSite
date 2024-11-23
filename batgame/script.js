@@ -8,9 +8,7 @@ const startBtn = document.querySelector('.startButton')
 const dialogo = document.querySelector('.dialogos')
 
 // Tempo de duração da animação do coringa
-const animationStyle = window
-    .getComputedStyle(joker)
-    .animation;
+const animationStyle = window.getComputedStyle(joker).animation;
 const animationDuration = animationStyle.split(' ')[0];
 var animationSpeed = parseFloat(animationDuration);
 
@@ -24,9 +22,7 @@ scoreDisplay.style.color = 'black';
 scoreDisplay.style.fontSize = '24px';
 scoreDisplay.style.fontWeight = 'bold';
 scoreDisplay.innerText = `Score: ${score}`;
-document
-    .body
-    .appendChild(scoreDisplay);
+document.body.appendChild(scoreDisplay);
 
 // Inicialmente desativa as animações joker.style.animation = 'none';
 // clouds.style.animation = 'none'; clouds2.style.animation = 'none';
